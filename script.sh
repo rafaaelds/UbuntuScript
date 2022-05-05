@@ -120,14 +120,6 @@ sudo snap install slack --classic
 echo "$(tput setaf 6) installing discord $(tput setab 7)"
 sudo snap install discord
 
-
-
-echo "$(tput setaf 3) installing chrome $(tput setab 7)" 
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get update
-sudo apt install google-chrome-stable
-
 echo "$(tput setaf 6) downloading and installing deb files $(tput setab 7)"
 cd ~/Downloads
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
